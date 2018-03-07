@@ -4,3 +4,9 @@ def reverse_each_word(str)
   arr.each {|word| rev_arr << word.reverse}
   rev_arr.join(" ")
 end
+
+def reverse_each_word(str)
+  arr = str.split(" ")
+  arr.map {|word|  word.reverse}.join(" ")
+  
+end
